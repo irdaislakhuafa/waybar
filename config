@@ -70,6 +70,7 @@
     "hyprland/window": {
 	"format": "{}",
 	"max-length": 30,
+	"show-empty": true,
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
