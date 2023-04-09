@@ -122,7 +122,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{used:0.2f}/{total:0.2f} GiB || {swapUsed}/{swapTotal} GiB"
+        "format": "{used:0.2f}/{total:0.2f} GiB {swapUsed}/{swapTotal} GiB"
     },
     "temperature": {
         // "thermal-zone": 2,
