@@ -125,29 +125,31 @@ button:hover {
     margin: 0px 100px;
 }
 
+
 .modules-left {
     background-color: #000000;
     margin-left: 10px;
     padding-right: 10px;
 }
 
-.modules-right {
+/* .modules-right {
     background-color: #000000;
-}
+} */
 
 #clock {
-    background-color: #64727D;
+    /* background-color: #64727D; */
+    color: #ffffff;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    /* background-color: #ffffff; */
+    color: #ffffff;
 }
 
 #battery.charging,
 #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #26A65B;
+    /* background-color: #26A65B; */
 }
 
 @keyframes blink {
@@ -158,8 +160,8 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    /* background-color: #f53c3c; */
+    color: #f53c3c;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -171,7 +173,7 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
+/* #cpu {
     background-color: #2ecc71;
     color: #000000;
 }
@@ -306,4 +308,4 @@ label:focus {
 
 #scratchpad.empty {
     background-color: transparent;
-}
+} */
