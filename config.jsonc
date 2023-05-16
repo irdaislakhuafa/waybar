@@ -1,7 +1,7 @@
 {
-//    "output": [
-//        "eDP-1"
-//    ],
+    //    "output": [
+    //        "eDP-1"
+    //    ],
     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     // "height": 1, // Waybar height (to be removed for auto height)
@@ -12,10 +12,11 @@
         "wlr/workspaces",
         "hyprland/submap",
         "hyprland/scratchpad",
-        "custom/media"
+        "custom/media",
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock"
     ],
     "modules-right": [
         //"mpd",
@@ -30,7 +31,6 @@
         // "hyprland/language",
         "battery",
         // "battery#bat2",
-        "clock",
         "tray"
     ],
     // Modules configuration
@@ -40,10 +40,10 @@
         "on-click": "activate",
         "format": "{name}",
         // "format": "{name}: {icon}",
-	"sort-by-number": true,
-	"sort-by-name": false,
-	"sort-by-coordinates": false,
-	"active-only": false,
+        "sort-by-number": true,
+        "sort-by-name": false,
+        "sort-by-coordinates": false,
+        "active-only": false,
         "format-icons": {
             "1": "",
             "2": "",
@@ -78,7 +78,7 @@
         "tooltip-format": "{app}: {title}"
     },
     "hyprland/window": {
-	"separate-outputs": true,
+        "separate-outputs": true,
         "format": "{}",
         "max-length": 30,
         "show-empty": false
@@ -123,7 +123,7 @@
     "clock": {
         "timezone": "Asia/Jakarta",
         "tooltip-format": "<big>{:%d, %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%A, %d %B %Y  (%H:%M:%S)}",
+        "format": "  {:%A, %d %B %Y | %H:%M:%S}",
         "interval": 1,
         "format-alt": "{:%Y-%m-%d}"
     },
