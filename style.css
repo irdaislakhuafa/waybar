@@ -7,9 +7,9 @@
 }
 
 window#waybar {
-    /*background-color: rgba(43, 48, 59, 0.5); */
+    /*background-color: rgba(43, 48, 59, 0.5);*/
     background-color: rgba(0, 0, 0, 0);
-    /*background-color: #2c3e50;*/
+    /*background-color: #2c3e50; */
     /*border-bottom: 3px solid rgba(100, 114, 125, 0.5);*/
     border-bottom: 0px solid rgba(0, 0, 0, 0);
     color: #ffffff;
@@ -21,14 +21,14 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-/*
+
 window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
     background-color: #FFFFFF;
 }
-*/
+
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -61,7 +61,7 @@ button:hover {
 
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
-    color: yellow;
+    color: green;
 }
 
 #workspaces button.active {
@@ -154,7 +154,7 @@ button:hover {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
+        /*background-color: #ffffff; */
         color: #000000;
     }
 }

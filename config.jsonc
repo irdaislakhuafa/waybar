@@ -1,7 +1,7 @@
 {
-    "output": [
-        "eDP-1"
-    ],
+//    "output": [
+//        "eDP-1"
+//    ],
     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     // "height": 1, // Waybar height (to be removed for auto height)
@@ -36,10 +36,14 @@
     // Modules configuration
     "wlr/workspaces": {
         "disable-scroll": false,
-        "all-outputs": true,
+        "all-outputs": false,
         "on-click": "activate",
         "format": "{name}",
         // "format": "{name}: {icon}",
+	"sort-by-number": true,
+	"sort-by-name": false,
+	"sort-by-coordinates": false,
+	"active-only": false,
         "format-icons": {
             "1": "",
             "2": "",
@@ -74,6 +78,7 @@
         "tooltip-format": "{app}: {title}"
     },
     "hyprland/window": {
+	"separate-outputs": true,
         "format": "{}",
         "max-length": 30,
         "show-empty": false
@@ -193,7 +198,7 @@
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
         "format": "{icon}  {volume}%  {format_source}",
-        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth": "{icon} {volume}%  {format_source}",
         "format-bluetooth-muted": "  {icon}  {format_source}",
         "format-muted": "  {format_source}",
         "format-source": " {volume}%",
