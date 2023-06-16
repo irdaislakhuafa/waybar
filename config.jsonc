@@ -10,10 +10,10 @@
     // Choose the order of the modules
     "modules-left": [
         "wlr/workspaces",
+        "hyprland/window",
         "hyprland/submap",
         "hyprland/scratchpad",
-        "custom/media",
-        "hyprland/window"
+        "custom/media"
     ],
     "modules-center": [
         "clock"
