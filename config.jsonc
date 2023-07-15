@@ -24,7 +24,8 @@
         "pulseaudio",
         "network",
         "cpu",
-        "memory",
+        // "memory",
+        "custom/memory",
         "temperature",
         "backlight",
         // "keyboard-state",
@@ -131,10 +132,10 @@
         "format": " {usage}%",
         "tooltip": false
     },
-    "memory": {
-        "format": "{used:0.2f}/{total:0.2f} GiB"
-        // "format": "{used:0.2f}/{total:0.2f} GiB {swapUsed}/{swapTotal} GiB"
-    },
+    // "memory": {
+    //     "format": "{used:0.2f}/{total:0.2f} GiB"
+    //     // "format": "{used:0.2f}/{total:0.2f} GiB {swapUsed}/{swapTotal} GiB"
+    // },
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -229,5 +230,9 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    }
+    },
+	"custom/memory": {
+        "format": "{}",
+        "exec": "used=$(free -hm | grep Mem: | awk '{print $3}')B; free=$(free -hm | grep Mem: | awk '{print $4}')B; echo \"$used/$free\""
+	}
 }
