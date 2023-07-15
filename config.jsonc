@@ -233,6 +233,7 @@
     },
 	"custom/memory": {
         "format": "{}",
+        "interval": 1,
         "exec": "used=$(free -hm | grep Mem: | awk '{print $3}')B; free=$(free -hm | grep Mem: | awk '{print $4}')B; echo \"$used/$free\""
 	}
 }
