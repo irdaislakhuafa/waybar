@@ -16,7 +16,7 @@
         "custom/media"
     ],
     "modules-center": [
-        "clock"
+        "custom/clock"
     ],
     "modules-right": [
         //"mpd",
@@ -121,13 +121,13 @@
         // "icon-size": 21,
         "spacing": 10
     },
-    "clock": {
-        "timezone": "Asia/Jakarta",
-        "tooltip-format": "<big>{:%d, %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "  {:%A, %d %B %Y | %H:%M:%S}",
-        "interval": 1,
-        "format-alt": "{:%Y-%m-%d}"
-    },
+    // "clock": {
+    //     "timezone": "Asia/Jakarta",
+    //     "tooltip-format": "<big>{:%d, %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    //     "format": "  {:%A, %d %B %Y | %T}",
+    //     "interval": 1,
+    //     "format-alt": "{:%Y-%m-%d}"
+    // },
     "cpu": {
         "format": " {usage}%",
         "tooltip": false
@@ -234,6 +234,11 @@
 	"custom/memory": {
         "format": "{}",
         "interval": 1,
-        "exec": "used=$(free -hm | grep Mem: | awk '{print $3}')B; free=$(free -hm | grep Mem: | awk '{print $4}')B; echo \"$used/$free\""
+        "exec": "used=$(free -hm | grep Mem: | awk '{print $3}')B; free=$(free -hm | grep Mem: | awk '{print $7}')B; echo \"$used/$free\""
+	},
+	"custom/clock": {
+		"format": "{}",
+		"interval": 1,
+		"exec": "date '+%A, %d %B %Y | %H:%M:%S'"
 	}
 }
